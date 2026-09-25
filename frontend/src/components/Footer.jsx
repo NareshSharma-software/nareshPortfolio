@@ -26,7 +26,7 @@ const Footer = () => {
             <div className="flex space-x-4">
 
               <a
-                href="https://github.com/"
+                href="https://github.com/NareshSharma-software"
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-500 transition-colors"
@@ -126,7 +126,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-primary-400 transition-colors"
                 >
-                  UI/UX Design
+                  WordPress Development
                 </a>
               </li>
 
@@ -135,7 +135,7 @@ const Footer = () => {
                   href="#"
                   className="text-gray-400 hover:text-primary-400 transition-colors"
                 >
-                  E-Commerce
+                  E-Commerce Development
                 </a>
               </li>
 
@@ -145,6 +145,14 @@ const Footer = () => {
                   className="text-gray-400 hover:text-primary-400 transition-colors"
                 >
                   Consulting
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-primary-400 transition-colors"
+                >
+                  Branding
                 </a>
               </li>
             </ul>
@@ -164,7 +172,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex-1 px-4 py-3 rounded-l-xl bg-white/10 border border-white/20 focus:outline-none focus:border-primary-500"
+                className="min-w-0 flex-1 px-4 py-3 rounded-l-xl bg-white/10 border border-white/20 focus:outline-none focus:border-primary-500"
               />
 
               <button

@@ -20,10 +20,10 @@ const Hero = () => {
             {/* Main Container */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="grid min-w-0 lg:grid-cols-2 gap-12 items-center">
 
                     {/* ================= LEFT CONTENT ================= */}
-                    <div className="animate-slide-up">
+                    <div className="min-w-0 animate-slide-up">
 
                         {/* Available for Work */}
                         <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-sm font-medium mb-6">
@@ -46,15 +46,13 @@ const Hero = () => {
                         </h1>
 
                         {/* Job Title */}
-                        <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 font-medium mb-6">
-
+                        <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 font-medium mb-6 break-words">
                             Freelance Full Stack Web Developer
 
                         </h2>
 
                         {/* Description */}
-                        <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-lg">
-
+                        <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-lg break-words">
                             I build modern, responsive websites and web applications
                             for businesses, startups and individuals.
 
@@ -96,7 +94,9 @@ const Hero = () => {
 
                             {/* GitHub */}
                             <a
-                                href="#"
+                                href="https://github.com/NareshSharma-software"
+                                target="_blank"
+                                rel="noreferrer"
                                 className="w-10 h-10 rounded-full bg-gray-100 dark:bg-slate-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary-500 hover:text-white transition-all"
                                 aria-label="GitHub"
                             >
@@ -135,7 +135,7 @@ const Hero = () => {
                     </div>
 
                     {/* ================= RIGHT CONTENT ================= */}
-                    <div className="relative flex justify-center lg:justify-end">
+                    <div className="relative min-w-0 flex justify-center lg:justify-end">
 
                         <div className="relative">
 

@@ -23,10 +23,9 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
-
-          {/* Technical Skills */}
-          <div>
+        <div className="grid min-w-0 lg:grid-cols-2 gap-8 lg:gap-16">    
+                {/* Technical Skills */}
+          <div className="min-w-0">
             <h3 className="text-xl font-bold mb-8 flex items-center">
               <i className="fas fa-code text-primary-500 mr-3"></i>
               Technical Skills
@@ -133,7 +132,7 @@ const Skills = () => {
           </div>
 
           {/* Tools & Technologies */}
-          <div>
+          <div className="min-w-0">
             <h3 className="text-xl font-bold mb-8 flex items-center">
               <i className="fas fa-tools text-accent-500 mr-3"></i>
               Tools & Technologies

@@ -20,10 +20,9 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-
+        <div className="grid min-w-0 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* ==================== WORK HISTORY ==================== */}
-          <div>
+          <div className="min-w-0">
             <h3 className="text-xl font-bold mb-8 flex items-center">
               <i className="fas fa-briefcase text-primary-500 mr-3"></i>
               Work History
@@ -115,7 +114,7 @@ const Experience = () => {
           </div>
 
           {/* ==================== EDUCATION ==================== */}
-          <div>
+          <div className="min-w-0">
             <h3 className="text-xl font-bold mb-8 flex items-center">
               <i className="fas fa-graduation-cap text-accent-500 mr-3"></i>
               Education

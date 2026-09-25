@@ -89,40 +89,40 @@ const Portfolio = () => {
             </div>
           </div>
 
-          {/* Project 2 */}
+            {/* Project 6 */}
           <div className="group relative overflow-hidden rounded-3xl shadow-lg card-hover">
             <img
-              src="/images/project-2.jpg"
-              alt="Fitness App"
+              src="/images/project-6.jpg"
+              alt="Portfolio Website"
               className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
             />
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="absolute bottom-0 left-0 right-0 p-6">
 
-                <span className="inline-block px-3 py-1 bg-accent-500 text-white text-xs font-medium rounded-full mb-3">
-                  Mobile App
+                <span className="inline-block px-3 py-1 bg-rose-500 text-white text-xs font-medium rounded-full mb-3">
+                  Web Design
                 </span>
 
                 <h3 className="text-xl font-bold text-white mb-2">
-                  Fitness Tracker App
+                  Creative Portfolio
                 </h3>
 
                 <p className="text-gray-300 text-sm mb-4">
-                  Track workouts and achieve fitness goals
+                  Designer portfolio with stunning animations
                 </p>
 
                 <div className="flex space-x-3">
                   <a
                     href="#"
-                    className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-accent-500 transition-colors"
+                    className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-rose-500 transition-colors"
                   >
                     <i className="fas fa-link"></i>
                   </a>
 
                   <a
-                    href="#"
-                    className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-accent-500 transition-colors"
+                    href="https://github.com/NareshSharma-software/nareshPortfolio" target="_blank" rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-rose-500 transition-colors"
                   >
                     <i className="fab fa-github"></i>
                   </a>
@@ -261,40 +261,40 @@ const Portfolio = () => {
             </div>
           </div>
 
-          {/* Project 6 */}
+         {/* Project 2 */}
           <div className="group relative overflow-hidden rounded-3xl shadow-lg card-hover">
             <img
-              src="/images/project-6.jpg"
-              alt="Portfolio Website"
+              src="/images/project-2.jpg"
+              alt="Fitness App"
               className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
             />
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="absolute bottom-0 left-0 right-0 p-6">
 
-                <span className="inline-block px-3 py-1 bg-rose-500 text-white text-xs font-medium rounded-full mb-3">
-                  Web Design
+                <span className="inline-block px-3 py-1 bg-accent-500 text-white text-xs font-medium rounded-full mb-3">
+                  Mobile App
                 </span>
 
                 <h3 className="text-xl font-bold text-white mb-2">
-                  Creative Portfolio
+                  Fitness Tracker App
                 </h3>
 
                 <p className="text-gray-300 text-sm mb-4">
-                  Designer portfolio with stunning animations
+                  Track workouts and achieve fitness goals
                 </p>
 
                 <div className="flex space-x-3">
                   <a
                     href="#"
-                    className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-rose-500 transition-colors"
+                    className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-accent-500 transition-colors"
                   >
                     <i className="fas fa-link"></i>
                   </a>
 
                   <a
                     href="#"
-                    className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-rose-500 transition-colors"
+                    className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-accent-500 transition-colors"
                   >
                     <i className="fab fa-github"></i>
                   </a>
