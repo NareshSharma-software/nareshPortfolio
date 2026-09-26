@@ -75,7 +75,9 @@ const Hero = () => {
 
                             {/* Download CV */}
                             <a
-                                href="#contact"
+                                href="/Naresh_Sharma_CV.pdf"
+                                download="Naresh-Sharma-CV.pdf" target="_blank"
+                                rel="noreferrer"
                                 className="inline-flex items-center px-8 py-3 rounded-full border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold hover:border-primary-500 hover:text-primary-500 transition-all"
                             >
                                 <i className="fas fa-download mr-2"></i>
