@@ -30,7 +30,8 @@
     "dotenv": "^18.0.3",
     "express": "^5.2.1",
     "nodemailer": "^10.0.10",
-    "react-redux": "^9.3.0"
+    "react-redux": "^9.3.0",
+    "resend": "^6.30.0"
   },
   "devDependencies": {
     "concurrently": "^10.0.5",

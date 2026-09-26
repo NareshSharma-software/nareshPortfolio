@@ -1,7 +1,15 @@
+import 'dotenv/config';
 import express from 'express';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 
 const router = express.Router();
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+console.log(
+  'RESEND API KEY:',
+  process.env.RESEND_API_KEY ? 'Loaded' : 'NOT LOADED'
+);
 
 router.post('/', async (req, res) => {
   try {
@@ -19,16 +27,8 @@ router.post('/', async (req, res) => {
       });
     }
 
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_APP_PASSWORD,
-      },
-    });
-
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
+    const { error } = await resend.emails.send({
+      from: 'Portfolio <onboarding@resend.dev>',
       to: process.env.EMAIL_USER,
       replyTo: email,
       subject: `Portfolio Contact: ${subject}`,
@@ -41,16 +41,25 @@ ${message}
       `,
     });
 
+    if (error) {
+      console.error('RESEND ERROR:', error);
+
+      return res.status(500).json({
+        message: error.message || 'Failed to send email',
+      });
+    }
+
     res.status(200).json({
       message: 'Message sent successfully',
     });
-  } catch (error) {
-  console.error('EMAIL ERROR:', error);
 
-  res.status(500).json({
-    message: error.message,
-  });
-}
+  } catch (error) {
+    console.error('EMAIL ERROR:', error);
+
+    res.status(500).json({
+      message: error.message || 'Failed to send email',
+    });
+  }
 });
 
 export default router;
