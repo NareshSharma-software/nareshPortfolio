@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     if (darkMode) {
@@ -12,13 +13,54 @@ const Header = () => {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        'home',
+        'about',
+        'skills',
+        'experience',
+        'portfolio',
+        'testimonials',
+        'contact',
+      ];
+
+      const scrollPosition = window.scrollY + 150;
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+
+        if (element) {
+          const sectionTop = element.offsetTop;
+          const sectionBottom = sectionTop + element.offsetHeight;
+
+          if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionBottom
+          ) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const closeMenu = () => {
     setMenuOpen(false);
   };
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-slate-700">
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="flex justify-between items-center h-16">
@@ -35,31 +77,59 @@ const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
 
-            <a href="#home" className="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+            <a
+              href="#home"
+              className={`nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors ${activeSection === 'home' ? 'active' : ''
+                }`}
+            >
               Home
             </a>
 
-            <a href="#about" className="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+            <a
+              href="#about"
+              className={`nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors ${activeSection === 'about' ? 'active' : ''
+                }`}
+            >
               About
             </a>
 
-            <a href="#skills" className="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+            <a
+              href="#skills"
+              className={`nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors ${activeSection === 'skills' ? 'active' : ''
+                }`}
+            >
               Skills
             </a>
 
-            <a href="#experience" className="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+            <a
+              href="#experience"
+              className={`nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors ${activeSection === 'experience' ? 'active' : ''
+                }`}
+            >
               Experience
             </a>
 
-            <a href="#portfolio" className="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+            <a
+              href="#portfolio"
+              className={`nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors ${activeSection === 'portfolio' ? 'active' : ''
+                }`}
+            >
               Portfolio
             </a>
 
-            <a href="#testimonials" className="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+            <a
+              href="#testimonials"
+              className={`nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors ${activeSection === 'testimonials' ? 'active' : ''
+                }`}
+            >
               Testimonials
             </a>
 
-            <a href="#contact" className="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+            <a
+              href="#contact"
+              className={`nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors ${activeSection === 'contact' ? 'active' : ''
+                }`}
+            >
               Contact
             </a>
 
@@ -85,9 +155,8 @@ const Header = () => {
               aria-label="Toggle mobile menu"
             >
               <i
-                className={`fas ${
-                  menuOpen ? 'fa-times' : 'fa-bars'
-                } text-xl`}
+                className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'
+                  } text-xl`}
               ></i>
             </button>
 

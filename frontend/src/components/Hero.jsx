@@ -123,7 +123,8 @@ const Hero = () => {
 
                             {/* Dribbble */}
                             <a
-                                href="#"
+                                href="https://nareshportfolio.onrender.com/" target="_blank"
+                                rel="noreferrer"
                                 className="w-10 h-10 rounded-full bg-gray-100 dark:bg-slate-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary-500 hover:text-white transition-all"
                                 aria-label="Dribbble"
                             >
@@ -152,7 +153,7 @@ const Hero = () => {
                                 <div className="absolute inset-2 bg-gray-100 dark:bg-slate-800 rounded-full overflow-hidden">
 
                                     <img
-                                        src="/images/profile.jpg"
+                                        src="/images/Naresh_Image.png"
                                         alt="Naresh Jangid"
                                         className="w-full h-full object-cover"
                                     />

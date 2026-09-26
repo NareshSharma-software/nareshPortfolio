@@ -84,31 +84,29 @@ const Experience = () => {
               </div>
 
               {/* Experience Item 3 */}
-              {/* <div className="relative pl-12">
+              <div className="relative pl-12">
                 <div className="absolute left-0 w-8 h-8 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full flex items-center justify-center">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
 
                 <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg">
                   <span className="inline-block px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 text-xs font-medium rounded-full mb-3">
-                    2018 - 2020
+                    2018 - 2021
                   </span>
 
                   <h4 className="text-lg font-bold mb-1">
-                    Frontend Developer
+                    Computer Instructor
                   </h4>
 
                   <p className="text-orange-500 font-medium mb-3">
-                    StartUp Labs
+                    Kendriya Vidyalaya Sangathan
                   </p>
 
                   <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    Built responsive user interfaces and improved user
-                    experience across multiple products. Reduced page load
-                    times by 60%.
+                    Guided students through hands-on exercises, and provided technical support and troubleshooting. Developed strong communication, teaching, and problem-solving skills.
                   </p>
                 </div>
-              </div> */}
+              </div>
 
             </div>
           </div>
@@ -137,7 +135,7 @@ const Experience = () => {
                   </span>
 
                   <h4 className="text-lg font-bold mb-1">
-                    B.Tech in Computer Science & Engineering
+                    Bachelor of Technology in Computer Science
                   </h4>
 
                   <p className="text-accent-500 font-medium mb-3">
@@ -176,7 +174,7 @@ const Experience = () => {
               </div>
 
               {/* Certifications */}
-              {/* <div className="relative pl-12">
+              <div className="relative pl-12">
                 <div className="absolute left-0 w-8 h-8 bg-gradient-to-r from-accent-500 to-primary-500 rounded-full flex items-center justify-center">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
@@ -192,7 +190,7 @@ const Experience = () => {
                     <div className="flex items-center">
                       <i className="fas fa-certificate text-yellow-500 mr-3"></i>
                       <span className="text-sm">
-                        AWS Certified Solutions Architect
+                        Full Stack Web Development
                       </span>
                     </div>
 
@@ -203,16 +201,16 @@ const Experience = () => {
                       </span>
                     </div>
 
-                    <div className="flex items-center">
+                    {/* <div className="flex items-center">
                       <i className="fas fa-certificate text-green-500 mr-3"></i>
                       <span className="text-sm">
                         Meta Frontend Developer Certificate
                       </span>
-                    </div>
+                    </div> */}
 
                   </div>
                 </div>
-              </div> */}
+              </div>
 
             </div>
           </div>

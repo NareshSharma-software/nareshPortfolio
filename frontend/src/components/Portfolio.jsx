@@ -71,7 +71,7 @@ const Portfolio = () => {
 
                 <div className="flex space-x-3">
                   <a
-                    href="#"
+                    href="https://ecommerceshopzy.onrender.com/" target="_blank" rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-primary-500 transition-colors"
                   >
                     <i className="fas fa-link"></i>
@@ -114,7 +114,7 @@ const Portfolio = () => {
 
                 <div className="flex space-x-3">
                   <a
-                    href="#"
+                    href="https://nareshportfolio.onrender.com/" target="_blank" rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white hover:bg-rose-500 transition-colors"
                   >
                     <i className="fas fa-link"></i>

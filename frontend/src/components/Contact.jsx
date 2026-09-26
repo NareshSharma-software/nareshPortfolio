@@ -163,7 +163,8 @@ const Contact = () => {
               </a>
 
               <a
-                href="#"
+                href="https://nareshportfolio.onrender.com/" target="_blank"
+                rel="noreferrer"
                 className="w-12 h-12 rounded-xl bg-gray-100 dark:bg-slate-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-gradient-to-r hover:from-primary-500 hover:to-accent-500 hover:text-white transition-all"
               >
                 <i className="fab fa-dribbble text-xl"></i>
@@ -277,7 +278,7 @@ const Contact = () => {
               <button
                 type="submit"
                 className="w-full py-4 rounded-xl gradient-bg text-white font-semibold hover:opacity-90 transition-all shadow-lg shadow-primary-500/25 flex items-center justify-center"
-              disabled={isLoading}>
+                disabled={isLoading}>
                 <i className="fas fa-paper-plane mr-2"></i>
                 {isLoading ? 'Sending...' : 'Send Message'}
               </button>
