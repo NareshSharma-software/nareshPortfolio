@@ -84,8 +84,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    <a href="mailto:nareshsharma.software@gmail.com" className="break-words">
-                      nareshsharma.software@gmail.com
+                    <a href="mailto:naresh@primedigitalservice.com" className="break-words">
+                      naresh@primedigitalservice.com
                     </a>
                   </p>
                   {/* <p className="text-gray-600 dark:text-gray-400">
@@ -149,7 +149,9 @@ const Contact = () => {
               </a>
 
               <a
-                href="#"
+                href="https://linkedin.com/in/primedigitalservice" target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
                 className="w-12 h-12 rounded-xl bg-gray-100 dark:bg-slate-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-gradient-to-r hover:from-primary-500 hover:to-accent-500 hover:text-white transition-all"
               >
                 <i className="fab fa-linkedin-in text-xl"></i>
@@ -210,7 +212,7 @@ const Contact = () => {
                     type="text" name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
-                    placeholder="Sharma"
+                    placeholder="Jangid"
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-700 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                   />
                 </div>
@@ -227,7 +229,7 @@ const Contact = () => {
                   type="email" name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="nareshsharma.software@gmail.com"
+                  placeholder="naresh@primedigitalservice.com"
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-700 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                 />
               </div>

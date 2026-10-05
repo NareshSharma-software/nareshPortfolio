@@ -13,52 +13,24 @@ console.log(
 
 router.post('/', async (req, res) => {
   try {
-    const {
-      firstName,
-      lastName,
-      email,
-      subject,
-      message,
-    } = req.body;
-
-    if (!firstName || !lastName || !email || !subject || !message) {
-      return res.status(400).json({
-        message: 'Please fill in all fields',
-      });
-    }
-
-    const { error } = await resend.emails.send({
-      from: 'Portfolio <onboarding@resend.dev>',
+    const { firstName, lastName, email, subject, message, } = req.body;
+    if (!firstName || !lastName || !email || !subject || !message) { return res.status(400).json({ message: 'Please fill in all fields', }); }
+    const { data, error } = await resend.emails.send({
+      from: 'Portfolio_Contact <naresh@primedigitalservice.com>',
       to: process.env.EMAIL_USER,
       replyTo: email,
       subject: `Portfolio Contact: ${subject}`,
-      text: `
-Name: ${firstName} ${lastName}
-Email: ${email}
-
-Message:
-${message}
-      `,
+      text: ` Name: ${firstName} ${lastName} Email: ${email} Message: ${message} `,
     });
-
     if (error) {
       console.error('RESEND ERROR:', error);
-
-      return res.status(500).json({
-        message: error.message || 'Failed to send email',
-      });
+      return res.status(500).json({ message: error.message || 'Failed to send email', });
     }
-
-    res.status(200).json({
-      message: 'Message sent successfully',
-    });
-
-  } catch (error) {
+    res.status(200).json({ message: 'Message sent successfully', data, });
+  }
+  catch (error) {
     console.error('EMAIL ERROR:', error);
-
-    res.status(500).json({
-      message: error.message || 'Failed to send email',
-    });
+    res.status(500).json({ message: error.message || 'Failed to send email', });
   }
 });
 

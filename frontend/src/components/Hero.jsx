@@ -75,8 +75,8 @@ const Hero = () => {
 
                             {/* Download CV */}
                             <a
-                                href="/Naresh_Sharma_CV.pdf"
-                                download="Naresh-Sharma-CV.pdf" target="_blank"
+                                href="/Naresh-Jangid-CV.pdf"
+                                download="Naresh-Jangid-CV.pdf" target="_blank"
                                 rel="noreferrer"
                                 className="inline-flex items-center px-8 py-3 rounded-full border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold hover:border-primary-500 hover:text-primary-500 transition-all"
                             >
@@ -84,7 +84,6 @@ const Hero = () => {
 
                                 Download CV
                             </a>
-
                         </div>
 
                         {/* Social Links */}
@@ -107,9 +106,11 @@ const Hero = () => {
 
                             {/* LinkedIn */}
                             <a
-                                href="#"
-                                className="w-10 h-10 rounded-full bg-gray-100 dark:bg-slate-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary-500 hover:text-white transition-all"
+                                href="https://linkedin.com/in/primedigitalservice" target="_blank"
+                                rel="noopener noreferrer"
                                 aria-label="LinkedIn"
+                                className="w-10 h-10 rounded-full bg-gray-100 dark:bg-slate-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary-500 hover:text-white transition-all"
+
                             >
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
@@ -125,7 +126,7 @@ const Hero = () => {
 
                             {/* Dribbble */}
                             <a
-                                href="#" 
+                                href="#"
                                 className="w-10 h-10 rounded-full bg-gray-100 dark:bg-slate-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-primary-500 hover:text-white transition-all"
                                 aria-label="Dribbble"
                             >

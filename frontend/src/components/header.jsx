@@ -71,7 +71,7 @@ const Header = () => {
             onClick={closeMenu}
             className="text-2xl font-bold gradient-text"
           >
-            NS
+            NJ
           </a>
 
           {/* Desktop Navigation */}

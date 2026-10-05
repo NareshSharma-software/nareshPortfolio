@@ -14,7 +14,7 @@ const Footer = () => {
               href="#home"
               className="text-3xl font-bold gradient-text mb-4 inline-block"
             >
-              NS
+              NJ
             </a>
 
             <p className="text-gray-400 mb-6">
@@ -35,7 +35,9 @@ const Footer = () => {
               </a>
 
               <a
-                href="#"
+                href="https://linkedin.com/in/primedigitalservice"
+                target="_blank"
+                rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-500 transition-colors"
               >
                 <i className="fab fa-linkedin-in"></i>
@@ -190,7 +192,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
 
           <p className="text-gray-400 text-sm">
-            &copy; 2026 Naresh Sharma. All rights reserved.
+            &copy; 2026 Naresh Jangid. All rights reserved.
           </p>
 
           <div className="flex space-x-6 mt-4 md:mt-0">
