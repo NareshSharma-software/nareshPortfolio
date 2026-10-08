@@ -49,7 +49,7 @@ const Experience = () => {
                   </h4>
 
                   <p className="text-primary-500 font-medium mb-3">
-                    TechCorp Inc.
+                    primeDigitalservice
                   </p>
 
                   <p className="text-gray-600 dark:text-gray-400 text-sm">
