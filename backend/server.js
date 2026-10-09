@@ -13,7 +13,12 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
+app.get('/api/test', (req, res) => {
+  res.json({
+    message: 'Portfolio Node API is working',
+    app: 'nareshPortfolio'
+  });
+});
 app.use('/api/contact', contactRoutes);
 
 
