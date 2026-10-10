@@ -13,36 +13,20 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/api/test', (req, res) => {
-  res.json({
-    message: 'Portfolio Node API is working',
-    app: 'nareshPortfolio'
-  });
-});
 app.use('/api/contact', contactRoutes);
 
-
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(
-        path.join(process.cwd(), 'frontend', 'build')
-    ));
+  const __dirname = path.resolve();
+  app.use(express.static(path.join(__dirname, '/frontend/build')));
 
-    app.get('/{*splat}', (req, res) => {
-        res.sendFile(
-            path.join(
-                process.cwd(),
-                'frontend',
-                'build',
-                'index.html'
-            )
-        );
-    });
+  app.get('/{*splat}', (req, res) =>
+    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
+  );
 } else {
-    app.get('/', (req, res) => {
-        res.send('API is running');
-    });
+  app.get('/', (req, res) => {
+    res.send('API is running....');
+  });
 }
-
 
 app.listen(port, () => {
     console.log(`server is running on ${port}`);
