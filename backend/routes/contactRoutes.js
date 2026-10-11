@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
     const { firstName, lastName, email, subject, message, } = req.body;
     if (!firstName || !lastName || !email || !subject || !message) { return res.status(400).json({ message: 'Please fill in all fields', }); }
     const { data, error } = await resend.emails.send({
-      from: 'Portfolio_Contact <naresh@primedigitalservice.com>',
+      from: "Naresh Portfolio <contact@primedigitalservice.com>",
       to: process.env.EMAIL_USER,
       replyTo: email,
       subject: `Portfolio Contact: ${subject}`,
