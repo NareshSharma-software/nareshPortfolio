@@ -84,7 +84,7 @@ const About = () => {
                   <p className="text-sm text-gray-500 dark:text-gray-400">
                     Name
                   </p>
-                  <p className="font-semibold">Naresh Jangid</p>
+                  <p className="font-semibold">Naresh Sharma</p>
                 </div>
               </div>
 
@@ -99,8 +99,8 @@ const About = () => {
                     Email
                   </p>
                   <p className="font-semibold">
-                    <a href="mailto:naresh@primedigitalservice.com" className="break-words">
-                      naresh@primedigitalservice.com
+                    <a href="mailto:nareshsharma.software@gmail.com" className="break-words">
+                      nareshsharma.software@gmail.com
                     </a>
                   </p>
                 </div>

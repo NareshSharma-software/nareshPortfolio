@@ -84,8 +84,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    <a href="mailto:naresh@primedigitalservice.com" className="break-words">
-                      naresh@primedigitalservice.com
+                    <a href="mailto:nareshsharma.software@gmail.com" className="break-words">
+                      nareshsharma.software@gmail.com
                     </a>
                   </p>
                   {/* <p className="text-gray-600 dark:text-gray-400">
@@ -108,7 +108,7 @@ const Contact = () => {
                     </a>
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Mon - Fri, 9:30 AM - 6:30 PM IST
+                    Mon - Sat, 9:30 AM - 6:30 PM IST
                   </p>
                 </div>
               </div>
@@ -212,7 +212,7 @@ const Contact = () => {
                     type="text" name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
-                    placeholder="Jangid"
+                    placeholder="Sharma"
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-700 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                   />
                 </div>
@@ -229,7 +229,7 @@ const Contact = () => {
                   type="email" name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="naresh@primedigitalservice.com"
+                  placeholder="nareshsharma.software@gmail.com"
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-700 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all"
                 />
               </div>
