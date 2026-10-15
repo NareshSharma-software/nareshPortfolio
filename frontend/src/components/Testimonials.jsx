@@ -4,7 +4,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="py-20 lg:py-32 relative overflow-hidden"
+      className="scroll-mt-16 py-14 sm:py-16 lg:py-20 relative overflow-hidden"
     >
       {/* Background Decoration */}
       <div className="absolute inset-0">
@@ -16,7 +16,7 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-600 dark:text-accent-400 text-sm font-medium mb-4">
             Testimonials
           </span>
@@ -144,7 +144,7 @@ const Testimonials = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-12 sm:mt-16 lg:mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {/* Stat 1 */}
           <div className="text-center p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-lg">

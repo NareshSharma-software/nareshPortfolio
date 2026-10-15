@@ -2,11 +2,11 @@ import React from 'react';
 
 const Blog = () => {
   return (
-    <section className="py-20 lg:py-32 bg-white dark:bg-slate-800/50">
+    <section className="scroll-mt-16 py-14 sm:py-16 lg:py-20 bg-white dark:bg-slate-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-sm font-medium mb-4">
             Blog
           </span>

@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="min-h-screen flex items-center relative overflow-hidden pt-16"
+            className="scroll-mt-16 min-h-screen flex items-center relative overflow-hidden pt-16"
         >
             {/* Background Decorations */}
             <div className="absolute inset-0 overflow-hidden">
@@ -47,16 +47,13 @@ const Hero = () => {
 
                         {/* Job Title */}
                         <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 font-medium mb-6 break-words">
-                            Freelance Full Stack Web Developer
+                           Full-Stack Web Developer | React, Node.js & Business Applications
 
                         </h2>
 
                         {/* Description */}
                         <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-lg break-words">
-                            I build modern, responsive websites and web applications
-                            for businesses, startups and individuals.
-
-                            Specializing in React, Node.js, Express and MongoDB.
+                            I build responsive business websites, web applications, dashboards, and e-commerce solutions with reliable backend functionality.
 
                         </p>
 
@@ -74,7 +71,7 @@ const Hero = () => {
                             </a>
 
                             {/* Download CV */}
-                            <a 
+                            <a
                                 href="/Naresh-Jangid-CV.pdf"
                                 download="Naresh-Sharma-CV.pdf"
                                 target="_blank"

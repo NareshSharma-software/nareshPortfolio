@@ -18,6 +18,7 @@ const Header = () => {
       const sections = [
         'home',
         'about',
+        'services',
         'skills',
         'experience',
         'portfolio',
@@ -91,6 +92,14 @@ const Header = () => {
                 }`}
             >
               About
+            </a>
+
+            <a
+              href="#services"
+              className={`nav-link text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors ${activeSection === 'services' ? 'active' : ''
+                }`}
+            >
+              Services
             </a>
 
             <a
@@ -191,6 +200,14 @@ const Header = () => {
                 className="px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-500"
               >
                 About
+              </a>
+
+              <a
+                href="#services"
+                onClick={closeMenu}
+                className="px-4 py-2 text-gray-600 dark:text-gray-300 hover:text-primary-500"
+              >
+                Services
               </a>
 
               <a

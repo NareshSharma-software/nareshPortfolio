@@ -2,11 +2,11 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 lg:py-32">
+    <section id="experience" className="scroll-mt-16 py-14 sm:py-16 lg:py-20 bg-white dark:bg-slate-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-accent-100 dark:bg-accent-900/30 text-accent-600 dark:text-accent-400 text-sm font-medium mb-4">
             Experience
           </span>
@@ -34,7 +34,7 @@ const Experience = () => {
               <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-accent-500"></div>
 
               {/* Experience Item 1 */}
-              <div className="relative pl-12 pb-12">
+              <div className="relative pl-12 pb-8 sm:pb-10">
                 <div className="absolute left-0 w-8 h-8 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full flex items-center justify-center">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
@@ -59,7 +59,7 @@ const Experience = () => {
               </div>
 
               {/* Experience Item 2 */}
-              <div className="relative pl-12 pb-12">
+              <div className="relative pl-12 pb-8 sm:pb-10">
                 <div className="absolute left-0 w-8 h-8 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full flex items-center justify-center">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
@@ -124,7 +124,7 @@ const Experience = () => {
               <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent-500 to-primary-500"></div>
 
               {/* Education Item 1 */}
-              <div className="relative pl-12 pb-12">
+              <div className="relative pl-12 pb-8 sm:pb-10">
                 <div className="absolute left-0 w-8 h-8 bg-gradient-to-r from-accent-500 to-primary-500 rounded-full flex items-center justify-center">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
@@ -149,7 +149,7 @@ const Experience = () => {
               </div>
 
               {/* Education Item 2 */}
-              <div className="relative pl-12 pb-12">
+              <div className="relative pl-12 pb-8 sm:pb-10">
                 <div className="absolute left-0 w-8 h-8 bg-gradient-to-r from-accent-500 to-primary-500 rounded-full flex items-center justify-center">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>

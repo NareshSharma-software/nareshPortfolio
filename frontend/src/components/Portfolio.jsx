@@ -48,7 +48,7 @@ const Portfolio = () => {
           {/* Project 1 */}
           <div className="group relative overflow-hidden rounded-3xl shadow-lg card-hover">
             <img
-              src="/images/project-1.jpg"
+              src="/images/ShopzyECommerce_3x2.png"
               alt="E-Commerce Platform"
               className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
             />
@@ -92,7 +92,7 @@ const Portfolio = () => {
             {/* Project 6 */}
           <div className="group relative overflow-hidden rounded-3xl shadow-lg card-hover">
             <img
-              src="/images/project-6.jpg"
+              src="/images/ReactWebsite_3x2.png"
               alt="Portfolio Website"
               className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
             />
